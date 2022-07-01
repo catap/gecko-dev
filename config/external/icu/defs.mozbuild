@@ -57,6 +57,7 @@ if CONFIG['CC_TYPE'] in ('clang', 'clang-cl'):
         '-Wno-tautological-unsigned-enum-zero-compare',
         '-Wno-unreachable-code-loop-increment',
         '-Wno-unreachable-code-return',
+        '-Wno-deprecated-declarations',
     ]
     CXXFLAGS += [
         '-Wno-c++20-compat',
@@ -67,6 +68,7 @@ if CONFIG['CC_TYPE'] in ('clang', 'clang-cl'):
         '-Wno-tautological-unsigned-enum-zero-compare',
         '-Wno-unreachable-code-loop-increment',
         '-Wno-unreachable-code-return',
+        '-Wno-deprecated-declarations',
     ]
 
 for k, v in DEFINES.items():
